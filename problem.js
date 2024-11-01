@@ -13,3 +13,37 @@ CHALLENGE
 - If the password is less than 5 characters, log out "Your password is too short!".
 */
 
+
+/*
+- Create a function to verify if user password is correct
+
+- Make an if else statement for if password is correct, access is granted, but else would be access denied
+
+- Create two ceperate if statements for if user types in forgot or reset
+
+- Create a way to check if password input can be verified
+*/
+
+let password = "PinkleDinkyFam";
+let requiredInput = password;
+
+
+function passwordVerification(password, requiredInput){
+    if (password === requiredInput) {
+    console.log("Access Granted!")
+    } else {
+    console.log("Access Denied!")
+    }
+    if (password === "forgot") {
+    console.log("Here is a hint")
+    }
+    if (password === "reset") {
+    console.log("Let's reset your account")
+    }
+
+}
+
+passwordVerification("PinkleDinkyFam", requiredInput)
+passwordVerification("notPinkleDinkyFam", requiredInput)
+passwordVerification("forgot", requiredInput)
+passwordVerification("reset", requiredInput)
